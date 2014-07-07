@@ -4,5 +4,6 @@
 
 1. Clone the Repo
 2. Bundle
+3. Start Redis
 3. Shotgun
 4. http://localhost:9393
