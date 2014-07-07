@@ -1,0 +1,22 @@
+---
+pid: 1300
+config: !ruby/object:Puma::Configuration
+  options:
+    :min_threads: 4
+    :max_threads: 4
+    :quiet: true
+    :debug: false
+    :binds:
+    - unix:///home/steve/apps/obp-shorty/shared/tmp/opsgui-puma.sock
+    :workers: 0
+    :daemon: true
+    :worker_directory: "/home/steve/apps/obp-shorty"
+    :config_file: config/puma.rb
+    :mode: :http
+    :worker_timeout: 60
+    :pidfile: "/home/steve/apps/obp-shorty/tmp/puma/pid"
+    :state: "/home/steve/apps/obp-shorty/tmp/puma/state"
+    :control_url: unix:///tmp/puma-status-1404350031223-1295
+    :control_url_temp: "/tmp/puma-status-1404350031223-1295"
+    :control_auth_token: 486517cf7fe3b294f8ce348f36a1b9
+    :environment: development
